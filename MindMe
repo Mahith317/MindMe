@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindfulness and Health Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MindMe</h1>
+        <nav>
+            <ul>
+                <li><a href="#log">Log Emotions & Health</a></li>
+                <li><a href="#advice">Receive Advice</a></li>
+                <li><a href="#daily-log">Daily Log</a></li>
+              
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Log Emotions & Health Section -->
+    <section id="log">
+        <h2>Log Your Emotions and Health</h2>
+        <form id="log-form">
+            <label for="emotion">How are you feeling emotionally?</label>
+            <select id="emotion" name="emotion" required>
+                <option value="">Select an emotion</option>
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="anxious">Anxious</option>
+                <option value="stressed">Stressed</option>
+                <option value="calm">Calm</option>
+                <option value="angry">Angry</option>
+                <option value="confident">Confident</option>
+                <option value="overwhelmed">Overwhelmed</option>
+            </select>
+
+            <label for="health">How is your overall health today?</label>
+            <select id="health" name="health" required>
+                <option value="">Select a health condition</option>
+                <option value="energetic">Energetic</option>
+                <option value="tired">Tired</option>
+                <option value="sick">Sick</option>
+                <option value="in pain">In pain</option>
+                <option value="healthy">Healthy</option>
+                <option value="headache">Headache</option>
+                <option value="nausea">Nausea</option>
+            </select>
+
+            <label for="sleep">How well did you sleep last night?</label>
+            <select id="sleep" name="sleep" required>
+                <option value="">Select sleep quality</option>
+                <option value="well rested">Well Rested</option>
+                <option value="interrupted">Interrupted</option>
+                <option value="insufficient">Insufficient</option>
+                <option value="restless">Restless</option>
+            </select>
+
+            <label for="diet">How was your diet today?</label>
+            <select id="diet" name="diet" required>
+                <option value="">Select your diet quality</option>
+                <option value="balanced">Balanced</option>
+                <option value="unhealthy">Unhealthy</option>
+                <option value="overate">Overate</option>
+                <option value="underate">Underate</option>
+                <option value="skipped meals">Skipped Meals</option>
+            </select>
+
+            <label for="activity">How active were you today?</label>
+            <select id="activity" name="activity" required>
+                <option value="">Select activity level</option>
+                <option value="very active">Very Active</option>
+                <option value="moderately active">Moderately Active</option>
+                <option value="not active">Not Active</option>
+                <option value="sedentary">Sedentary</option>
+            </select>
+
+            <label for="stress">How would you rate your stress level today?</label>
+            <select id="stress" name="stress" required>
+                <option value="">Select stress level</option>
+                <option value="low">Low</option>
+                <option value="moderate">Moderate</option>
+                <option value="high">High</option>
+                <option value="very high">Very High</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="summary">
+            <h3>Your Summary</h3>
+            <p id="summary-text"></p>
+        </div>
+    </section>
+
+    <!-- Advice Section -->
+    <section id="advice">
+        <h2>Personalized Advice</h2>
+        <div id="advice-text"></div>
+    </section>
+
+  
+
+    <!-- Daily Log Section -->
+    <section id="daily-log">
+        <h2>Your Daily Log</h2>
+        <ul id="log-list"></ul>
+    </section>
+
+ 
+
+    <script src="script.js"></script>
+</body>
+</html>
